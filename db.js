@@ -9,8 +9,13 @@ let User = mongoose.model('User', userSchema);
 
 let saveUser = (data, callback) => {
   let user = new User(data);
-  user.save((err, success) => {
-    callback(err, success);
+  User.find({email: data.email}, (err, doc) => {
+    if(doc)
+      return callback('Already Subscribed', false)
+    else
+      user.save((err, success) => {
+        callback(err, success);
+      })
   })
 }
 

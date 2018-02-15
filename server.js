@@ -22,7 +22,7 @@ app.post('/subscribe', (req, res) => {
   console.log(req.body);
   db.saveUser(req.body, (err, success) => {
     if(err)
-      res.status(500).send({err: err, success: null});
+      res.sendFile(__dirname+'/error.html');
     else
       res.sendFile(__dirname+'/success.html');
   })
