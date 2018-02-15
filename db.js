@@ -11,7 +11,7 @@ let saveUser = (data, callback) => {
   let user = new User(data);
   User.find({email: data.email}, (err, doc) => {
     console.log(doc)
-    if(doc.length > 1)
+    if(doc.length >= 1)
       return callback('Already Subscribed', false)
     else
       user.save((err, success) => {
