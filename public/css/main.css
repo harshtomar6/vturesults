@@ -1,0 +1,143 @@
+body{
+    margin:0px;
+    padding:0px;
+}
+a{
+    text-decoration:none;
+    color: #fff;
+}
+a:visited{
+    color:white;
+}
+.container{
+    background-image: url("../images/img_bg_1.jpg");
+    height:100%;
+    width:100%;
+}
+nav{
+    margin:0px;
+    padding:0px;
+}
+nav ul{
+    list-style:none;
+    color:white;
+    margin:0px;
+    padding:10px;
+    padding-left:15px;
+}
+.home{
+    font-size:30px;
+}
+nav .logo{
+    font-size: 16px;
+}
+.right{
+    float:right;
+    margin-top:-25px;
+}
+.content{
+    text-align:center;
+    font-size:40px;
+    margin-top:8%;
+    color:white;
+}
+@media screen and (max-width:400px){
+    .content{ 
+        font-size:30px;
+        margin-top: 120px;
+        margin-bottom: 30px;
+    }
+}
+
+
+form{ 
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:5%;
+    width:30%;
+
+}
+@media screen and (max-width:400px){
+    form{ width:92%;margin:4%;}
+}
+.green{
+    color:#52d3aa;
+}
+
+@media screen and (max-width:400px){
+    .green{ 
+        color: #52ffaa;
+    }
+}
+
+
+
+input[type="text"] {
+    width:100%;
+    margin-top:8px;
+    background:transparent;
+    border:2px white solid;
+    padding:10px;
+    padding-left:10px;
+    color:white;
+    border-radius:4px;
+}
+
+input[type="text"]:hover{
+    background-color:rgba(207, 216, 220,0.8);
+}
+
+input[type="text"]:focus {
+    
+    background:#eceff1;
+    border:2px white solid;
+    color:#78909c;
+    border-radius:4px;
+    transition:0.4s;
+}
+
+input[type="email"] {
+    width:100%;
+    margin-top:8px;
+    background:transparent;
+    border:2px white solid;
+    padding:10px;
+    padding-left:10px;
+    color:white;
+    border-radius:4px;
+}
+
+input[type="email"]:hover{
+    background-color:rgba(207, 216, 220,0.8);
+}
+
+input[type="email"]:focus {
+    
+    background:#eceff1;
+    border:2px white solid;
+    color:#78909c;
+    border-radius:4px;
+    transition:0.4s;
+}
+.btn-subscribe{
+    font-size: 20px;
+    padding:15px;
+    margin-top:15px;
+    background:transparent;
+    width:60%;
+    border:none;
+    color:#52d3aa;
+    background:#e9ffb2;
+    border-radius:20px;
+    margin-left:20%;
+    cursor:pointer;
+}
+.btn-subscribe:hover{
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+         box-shadow: 0 10px 6px -6px #777;
+}
+t{
+    color:#f5ffcb;
+    font-size:23px;
+}
